@@ -36,7 +36,7 @@ The user should be able to:
 
 # Screenshot
 
-![screenshot](assets/screenshot.png)
+![screenshot](assets/Screenshot.png)
 
 ## JSON
 
