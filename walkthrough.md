@@ -59,3 +59,5 @@ You are required to submit the following:
 - The URL to the deployed application
 
 - The URL to the GitHub repository
+
+mongodb+srv://testing:mongodb123@cluster0.h5mbi.mongodb.net/workout?retryWrites=true&w=majority
