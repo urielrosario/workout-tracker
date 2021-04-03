@@ -40,7 +40,7 @@ The user should be able to:
 
 ## JSON
 
-![screenshot](assets/json.png)
+![json](assets/json.png)
 
 # Walkthrough
 
