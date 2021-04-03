@@ -19,21 +19,21 @@ router.post("/api/workouts", ({ body }, res) => {
       res.json(err);
     });
 });
-router.put("/api/workouts/:id", ({ body, params }, res) => {
-  db.Workout.findOneAndUpdate(
-    { _id: params.id },
-    { $push: { exercises: body } },
-    { new: true },
-    (workout) => {
+router.put("/api/workouts/:id", async (req, res) => {
+  db.Workout.updateOne(
+    { _id: req.params.id },
+    { $push: { exercises: { ...req.body } } }
+  )
+    .then((workout) => {
       res.json(workout);
-    }
-  ).catch((err) => {
-    res.json(err);
-  });
+    })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
-router.get("/api/workouts/range", ({ body }, res) => {
-  db.Workout.find({ body })
+router.get("/api/workouts/range", (req, res) => {
+  db.Workout.find({})
     .then((workout) => {
       res.json(workout);
     })
