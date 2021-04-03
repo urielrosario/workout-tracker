@@ -44,7 +44,7 @@ The user should be able to:
 
 # Walkthrough
 
-![screenshot](assets\walkthrough.gif)
+![walkthrough](assets/walkthrough.gif)
 
 # Links
 
